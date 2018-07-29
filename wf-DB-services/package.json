@@ -1,0 +1,12 @@
+{
+  "name": "wf-db-services",
+  "version": "0.0.0",
+  "description": "wf-DB-services",
+  "main": "app.js",
+  "author": {
+    "name": "Sharon and Andrew"
+  },
+  "dependencies": {
+    "mssql": "^4.1.0"
+  }
+}

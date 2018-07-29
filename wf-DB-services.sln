@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "wf-DB-services", "wf-DB-services\wf-DB-services.njsproj", "{3827D550-FFB1-4DE0-86D6-8CB159643926}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3827D550-FFB1-4DE0-86D6-8CB159643926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3827D550-FFB1-4DE0-86D6-8CB159643926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3827D550-FFB1-4DE0-86D6-8CB159643926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3827D550-FFB1-4DE0-86D6-8CB159643926}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80BD4816-288F-49BD-B7E4-F3732F50A1ED}
+	EndGlobalSection
+EndGlobal
