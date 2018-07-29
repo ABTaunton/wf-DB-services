@@ -1,3 +1,1 @@
-'use strict';
-
-console.log('Hello world');
+require("./core/server");
