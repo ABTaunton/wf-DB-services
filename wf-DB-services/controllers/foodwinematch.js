@@ -7,7 +7,7 @@ exports.getFoodList = function (req, resp) {
             resp.write("<html><head><title>500</title></head><body>500: Internal Error. Details: " + err + "</body></html>");
         }
         else {
-            resp.wrieHead(200, { "Content-Type": "application/json" });
+            resp.writeHead(200, { "Content-Type": "application/json" });
             resp.write(JSON.stringify(data));
         }
 
