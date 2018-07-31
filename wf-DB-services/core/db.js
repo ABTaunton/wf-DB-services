@@ -9,7 +9,7 @@ exports.executeSql = function (sql, callback) {
             var req = new sqlDb.Request(conn);
             req.query(sql)
                 .then(function (recordset) {
-                    callback(recordset);
+                    callback(recordset.recordset);
                 })
                 .catch(function (err) {
                     console.log(err);
