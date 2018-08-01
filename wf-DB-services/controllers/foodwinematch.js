@@ -1,4 +1,5 @@
 ﻿var db = require("../core/db");
+var cors = require("cors");
 
 exports.getFoodList = function (req, resp) {
     db.executeSql("SELECT * FROM Food", function (data, err) {
@@ -7,10 +8,7 @@ exports.getFoodList = function (req, resp) {
             resp.write("<html><head><title>500</title></head><body>500: Internal Error. Details: " + err + "</body></html>");
         }
         else {
-            resp.writeHead(200, {"Content-Type": "application/json" });
-            resp.writeHead(200, { 'Access-Control-Allow-Origin': "*" });
-            resp.writeHead(200, { "Access-Control-Allow-Method": "GET,PUT,POST,DELETE" });
-            resp.writeHead(200, {"Access-Control-Allow-Headers": "Content-Type"});
+            resp.writeHead(200, {"Access-Control-Allow-Origin": "*" });
             resp.write(JSON.stringify(data));
             
             
