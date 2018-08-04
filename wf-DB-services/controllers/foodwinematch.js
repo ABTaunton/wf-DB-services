@@ -1,19 +1,15 @@
 ﻿var db = require("../core/db");
 var cors = require("cors");
+var httpMsgs = require("../core/httpMsgs");
 
 exports.getFoodList = function (req, resp) {
     db.executeSql("SELECT * FROM Food", function (data, err) {
         if (err) {
-            resp.writeHead(500, "Internal Error occurred", { "Content-Type": "text/html" });
-            resp.write("<html><head><title>500</title></head><body>500: Internal Error. Details: " + err + "</body></html>");
+            httpMsgs.show500(req, resp, err);
         }
         else {
-            resp.writeHead(200, {"Access-Control-Allow-Origin": "*" });
-            resp.write(JSON.stringify(data));
-            
-            
-            }
-        resp.end();
+            httpMsgs.sendJson(req, resp, data);
+        }
     });
 };
 

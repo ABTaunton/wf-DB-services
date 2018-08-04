@@ -35,6 +35,9 @@
     <Compile Include="core\db.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="core\httpMsgs.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="core\server.js">
       <SubType>Code</SubType>
     </Compile>
