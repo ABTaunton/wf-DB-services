@@ -20,5 +20,5 @@ exports.sendJson = function (req, resp, data) {
     resp.end();
 }
 exports.send200 = function (req, resp) {
-
+    resp.writeHead(200, { "Access-Control-Allow-Origin": "*" });
 }

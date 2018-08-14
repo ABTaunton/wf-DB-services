@@ -8,4 +8,4 @@
 
 exports.webPort = 9000;
 
-exports.httpMsgsFormat = HTML;
+exports.httpMsgsFormat = "HTML";
